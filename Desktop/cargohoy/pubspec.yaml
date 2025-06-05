@@ -1,0 +1,136 @@
+name: cargohoy
+description: Plataforma logística integral multiplataforma
+
+platforms:
+  android:
+    minSdkVersion: 21
+    targetSdkVersion: 33
+  ios:
+    minVersion: "12.0"
+  web:
+    enabled: true
+  windows:
+    enabled: true
+  macos:
+    enabled: true
+  linux:
+    enabled: true
+
+publish_to: 'none' # Evita publicar el paquete en pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Versión de Dart compatible
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Dependencias principales
+  provider: ^6.1.1 # Para manejo de estado
+  http: ^1.1.0 # Para llamadas HTTP a la API
+  flutter_riverpod: ^2.4.9 # Alternativa a Provider para manejo de estado
+  flutter_bloc: ^9.0.0 # Para manejo de estado con BLoC (opcional)
+  equatable: ^2.0.5 # Para comparación de objetos (útil con BLoC)
+  
+  # Navegación y rutas
+  go_router: ^13.1.0 # Para manejo de rutas y navegación
+  auto_route: ^10.0.1 # Alternativa para manejo de rutas
+
+  # Firebase (si se usa Firebase como backend)
+  firebase_core: ^3.13.1 # Core de Firebase
+  firebase_auth: ^4.15.3 # Autenticación con Firebase
+  cloud_firestore: ^4.13.6 # Firestore para base de datos
+  firebase_storage: ^11.5.6 # Almacenamiento en Firebase
+  firebase_messaging: ^14.7.9 # Notificaciones push
+  firebase_analytics: ^10.7.4 # Analíticas de Firebase
+  firebase_data_connect: ^0.1.2+7
+  # Mapas (Google Maps o alternativas)
+  google_maps_flutter: ^2.5.0 # Integración con Google Maps
+  flutter_map: ^8.1.1 # Alternativa a Google Maps (OpenStreetMap)
+
+  # Manejo de imágenes y assets
+  cached_network_image: ^3.3.0 # Para cargar imágenes desde la red
+  image_picker: ^1.0.5 # Para seleccionar imágenes desde la galería o cámara
+
+  # Formularios y validación
+  formz: ^0.8.0 # Para manejo de formularios y validación
+  flutter_form_builder: ^10.0.1 # Para formularios dinámicos
+
+  # Internacionalización
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0 # Para manejo de fechas y formatos
+
+  # Soporte para temas y diseño
+  flutter_spinkit: ^5.2.0 # Para animaciones de carga
+  fluttertoast: ^8.2.4 # Para mostrar notificaciones tipo toast
+
+  # Manejo de archivos y documentos
+  file_picker: ^10.1.2 # Para seleccionar archivos
+  open_file: ^3.3.1 # Para abrir archivos en el dispositivo
+
+  # Gamificación y notificaciones
+  badges: ^3.1.2 # Para mostrar insignias en íconos
+  flutter_local_notifications: ^19.1.0 # Para notificaciones locales
+
+  # Dependencias de desarrollo
+  cupertino_icons: ^1.0.2
+
+  # Payments
+  stripe_payment: ^1.1.4
+  
+  # UI Components
+  flutter_calendar_carousel: ^2.4.2
+  flutter_rating_bar: ^4.0.1
+
+  # Maps and Location
+  location: ^5.0.3
+
+  # Utils
+  url_launcher: ^6.2.2
+
+  # Soporte multiplataforma
+  universal_platform: ^1.0.0+1
+  responsive_framework: ^1.5.1
+  flutter_platform_widgets: ^8.0.0
+  
+  # Web específico
+  url_strategy: ^0.3.0
+  universal_html: ^2.2.4
+  
+  # Desktop específico
+  window_manager: ^0.4.3
+  system_tray: ^2.0.3
+  desktop_window: ^0.4.0
+  
+  # Almacenamiento multiplataforma
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  isar: ^3.1.0 # Base de datos multiplataforma
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.0 # Para pruebas unitarias con mocks
+  build_runner: ^2.4.7 # Para generación de código (auto_route, etc.)
+  flutter_gen: ^5.3.1 # Para generación de assets y colores
+  flutter_launcher_icons: ^0.14.3 # Para generar íconos de la aplicación
+  
+  flutter_lints: ^3.0.1
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto/Roboto-Regular.ttf
+        - asset: assets/fonts/roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/roboto/Roboto-Italic.ttf
+          style: italic

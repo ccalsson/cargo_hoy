@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1021235827490",
+    "project_id": "cargohoy-2b881",
+    "storage_bucket": "cargohoy-2b881.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021235827490:android:17e90a586667611c1a8b7b",
+        "android_client_info": {
+          "package_name": "com.example.cargohoy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxuop-ZhF0kY0r-OyHW6F22d1YEYiESdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
